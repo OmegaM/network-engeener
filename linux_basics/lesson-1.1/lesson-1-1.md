@@ -1,7 +1,7 @@
 # Урок 1. Введение в Linux. Философия, базовые понятия, установка дистрибутива
 
 ### 1. 
-Вместо установки виртуальной машины, предоставляю [terraform manifest](terraform)
+Вместо установки виртуальной машины, предоставляю [terraform manifest](../terraform)
 
 ### 2. 
 ```bash
@@ -26,4 +26,4 @@ Installed:
 ...
 Complete!
 ```
-[midnitecommander](imgs/mc_start.png)
+![midnitecommander](../imgs/mc_start.png)
