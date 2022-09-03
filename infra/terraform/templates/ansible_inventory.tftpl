@@ -1,0 +1,4 @@
+[all]
+%{ for host in terraform_instances ~}
+${host} ansible_user=${user}
+%{ endfor }

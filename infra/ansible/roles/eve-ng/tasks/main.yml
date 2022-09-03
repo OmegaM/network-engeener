@@ -1,0 +1,14 @@
+---
+- name: Download eve-ng
+  get_url:
+    url: '{{ EVE_INSTALL_SCRIPT_URL }}'
+    dest: /tmp/eve-ng.sh
+    mode: '0111'
+
+- name: Upgrade apt
+  apt:
+    update_cache: yes
+    upgrade: full
+  
+- name: Install eve-ng
+  shell: /tmp/eve-ng.sh

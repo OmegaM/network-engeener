@@ -39,3 +39,8 @@ variable "instances" {
         }
     ]
 }
+
+variable "ssh_user" {
+  type  = string
+  default = "centos"
+}

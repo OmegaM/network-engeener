@@ -1,3 +1,4 @@
 **/*.tfstate*
 .env.sh
 **/.terraform*
+infra/ansible/inventory/**

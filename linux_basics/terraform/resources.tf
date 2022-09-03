@@ -1,7 +1,8 @@
 resource "yandex_compute_instance" "instances" {
     for_each = { for instance in local.instances_merged_list : instance.name => instance }
 
-    name    = each.value.name
+    name                        = each.value.name
+    allow_stopping_for_update   = true
     
     resources {
       cores         = each.value.resources.cpu
@@ -22,6 +23,6 @@ resource "yandex_compute_instance" "instances" {
     }
 
     metadata = {
-        ssh-keys = "centos:${file("~/.ssh/id_rsa.pub")}"
+        ssh-keys = "${var.ssh_user}:${file("~/.ssh/id_rsa.pub")}"
     }
 }
