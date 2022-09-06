@@ -40,6 +40,25 @@ variable "instances" {
     ]
 }
 
+variable "custom_disk" {
+    type    = object({
+        type         = string
+        size         = number
+        isReplicated = bool
+        autoDelete  = bool
+    })
+    default = null
+
+    description = <<-EOF
+    "
+    type         - network-ssd or network-hdd
+    size         - size of disk in GB
+    isReplicated - can be used only with network-ssd
+    autoDelete   - if true, disk will be deleted when instance deleted
+    "
+    EOF
+}
+
 variable "ssh_user" {
   type  = string
   default = "centos"
