@@ -79,10 +79,9 @@ Sep 10 11:53:39 fhmtd7l02cvu4aq9hftn.auto.internal sshd[1278]: Server listening 
 Sep 10 11:53:39 fhmtd7l02cvu4aq9hftn.auto.internal sshd[1278]: Server listening on :: port 22.
 Sep 10 11:53:39 fhmtd7l02cvu4aq9hftn.auto.internal systemd[1]: Started OpenSSH server daemon.
 ```
->>>
-Systemctl restart - останавливает демона и запускает его заново.
-Systemctl reload  - Заставляет сервис перечитать конфигурационный файл, без остановки процесса. Альтернатива - kill -1 main_procces_pid
->>>
+>Systemctl restart - останавливает демона и запускает его заново.
+>
+>Systemctl reload  - Заставляет сервис перечитать конфигурационный файл, без остановки процесса. Альтернатива - kill -1 main_procces_pid
 
 ### 2.
 ```bash
