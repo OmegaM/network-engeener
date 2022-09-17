@@ -13,7 +13,7 @@ variable "instances" {
     }))
     default = [
         {
-            image_id        = "fd8ad4ie6nhfeln6bsof" #centos 7 "fd8kdq6d0p8sij7h5qe3" ubuntu 20.04
+            image_id        = "fd8kdq6d0p8sij7h5qe3" #ubuntu 20.04
             count           = 1
             resources       = {
                 cpu             = 2
