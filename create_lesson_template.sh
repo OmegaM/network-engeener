@@ -6,7 +6,7 @@ iterator=0
 for group in ${groups[@]}
 do 
     echo "${iterator}.  ${group}"
-    iterator+=1
+    iterator=$(($iterator+1))
 done
 read tmp
 if [[ $tmp =~ ^[0-9]+$ ]]
