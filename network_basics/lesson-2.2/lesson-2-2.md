@@ -1,5 +1,5 @@
 # Урок 2. Первый уровень модели TCP/IP: Физический уровень
-> Конфигурация инетрфейсов switch
+>>> Конфигурация инетрфейсов switch
 ![Fast Ethernet Interface - 1](../imgs/cpt_switch_1FEI.png)
 ![Fast Ethernet Interface - 2](../imgs/cpt_switch_2FEI.png)
 ![Fast Ethernet Interface - 3](../imgs/cpt_switch_3FEI.png)
