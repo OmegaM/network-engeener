@@ -12,3 +12,10 @@
   
 - name: Install eve-ng
   shell: /tmp/eve-ng.sh
+  async: 1000
+  poll: 0
+
+- name: Wait for 80 port
+  wait_for:
+    port: 80
+    delay: 60
